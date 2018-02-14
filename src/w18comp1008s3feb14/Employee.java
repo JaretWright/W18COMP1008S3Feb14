@@ -6,7 +6,7 @@ import java.time.LocalDate;
  *
  * @author JWright
  */
-public class Employee
+public abstract class Employee
 {
     private String firstName, lastName, socialInsuranceNum;
     private LocalDate dateOfBirth;
@@ -71,7 +71,10 @@ public class Employee
         this.employeeNum = employeeNum;
     }
     
-    
-    
-    
+    /**
+     * This abstract method is designed to ensure each subclass 
+     * implements it according to the type of Employee
+     * @return the pay amount
+     */
+    public abstract double calculatePay();
 }
