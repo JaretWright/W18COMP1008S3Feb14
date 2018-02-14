@@ -77,4 +77,13 @@ public abstract class Employee
      * @return the pay amount
      */
     public abstract double calculatePay();
+    
+    /**
+     * returns the Employee's first and last name as 1 String
+     * @return 
+     */
+    public String toString()
+    {
+        return firstName + " " + lastName;
+    }
 }

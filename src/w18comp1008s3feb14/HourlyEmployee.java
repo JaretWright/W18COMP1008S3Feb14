@@ -58,5 +58,12 @@ public class HourlyEmployee extends Employee
         return this.hoursWorked * this.hourlyRate;
     }
     
-    
+    /**
+     * This returns a String from the parent class followed by the hourly rate
+     */
+    public String toString()
+    {
+        return String.format("%s hourly rate: $%.2f", super.toString(), 
+                                                        hourlyRate);
+    }
 }
