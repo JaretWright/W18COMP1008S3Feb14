@@ -13,7 +13,7 @@ public class JellyBean
 
     public JellyBean(String color, String flavour, String brand)
     {
-        this.color = color;
+        setColor(color);
         this.flavour = flavour;
         this.brand = brand;
     }
@@ -29,7 +29,7 @@ public class JellyBean
         List<String> colors = Arrays.asList(validColors);
         
         if (colors.contains(color.toLowerCase()))
-            this.color = color;
+            this.color = color.toLowerCase();
         else
             throw new IllegalArgumentException("color must be red, white, blue or orange");
     }
