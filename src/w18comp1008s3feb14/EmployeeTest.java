@@ -21,6 +21,12 @@ public class EmployeeTest
         
         System.out.printf("Emp1 payrate: $%.2f%n", emp1.getHourlyRate());
         
-        System.out.println(emp1);
+        System.out.println("Emp1: " + emp1);
+        
+        CommissionEmployee emp2 = new CommissionEmployee(15, 
+              "Jason", "Brody","123 456 790", 
+                LocalDate.of(2000, Month.MARCH, 10), 100002);
+        
+        System.out.println("Emp2: " + emp2);
     }
 }
